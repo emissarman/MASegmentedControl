@@ -346,6 +346,7 @@ public class MASegmentedControl: UIControl {
             let button = UIButton(type: .system)
             button.setTitle(buttonTitle, for: .normal)
             button.titleLabel?.font = titlesFont
+            button.titleLabel?.adjustsFontForContentSizeCategory = true
             button.setTitleColor(textColor, for: .normal)
             button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
             buttons.append(button)
